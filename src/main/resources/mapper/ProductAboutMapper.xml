@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kchen.mas.mapper.ProductAboutMapper">
+
+    <resultMap id="BaseResultMap" type="com.kchen.mas.domain.ProductAbout">
+            <id property="piAsin" column="pi_asin" jdbcType="VARCHAR"/>
+            <result property="piAbout" column="pi_about" jdbcType="VARCHAR"/>
+            <result property="piAboutZh" column="pi_about_zh" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        pi_asin,pi_about,pi_about_zh
+    </sql>
+</mapper>
