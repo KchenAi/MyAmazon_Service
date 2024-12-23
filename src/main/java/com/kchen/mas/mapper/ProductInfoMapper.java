@@ -11,6 +11,7 @@ import java.util.List;
 public interface ProductInfoMapper extends BaseMapper<ProductInfo> {
 
     @Results({
+            @Result(column = "pi_asin", property = "piAsin"),
             @Result (column = "pi_asin", property = "abouts",
             many = @Many(select = "com.kchen.mas.mapper.ProductAboutMapper.getAboutByAsin")),
     })
